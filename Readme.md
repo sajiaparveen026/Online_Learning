@@ -2,17 +2,22 @@
   
   >> Home Page
   -> Navigation Bar
-     WebName         Home         Topics         SearchBar         AddCart
+     <WebName>         Home         Topics         AddCart
 
      Section One -
          Image and Short Description
 
      Section Two -
-         Cards Related to the Content
+         Cards Related to Free Content
 
      Section Three - 
-         Cards Related to the Upcoming Content
+         Cards Related to Buy Courses
+
+     Section Four -
+        Some Content regarding.. Why to Choose us?
 
   -> Footer Section                
 
+
   >> Topics Page
+    
