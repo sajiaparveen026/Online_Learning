@@ -12,4 +12,31 @@
     background-color: #f0f0f0;
     
   }
-  
+  @media screen and (max-width: 1000px) {
+    /* Change the grid template columns for smaller screens */
+      .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        /* Adjust the height and margin for smaller screens */
+        height: auto;
+        margin: 20px;
+      }
+  }
+  @media screen and (max-width: 600px) {
+    /* Change the grid template columns for smaller screens */
+      .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        /* Adjust the height and margin for smaller screens */
+        height: auto;
+        margin: 20px;
+      }
+  }
+  @media screen and (max-width: 400px) {
+    /* Change the grid template columns for smaller screens */
+      .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+        /* Adjust the height and margin for smaller screens */
+        height: auto;
+        margin: 20px;
+      }
+  }
+ 
