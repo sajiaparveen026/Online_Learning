@@ -6,25 +6,18 @@ import Image1 from '../Components/Images/12.png'
 const HomePage = () => {
   return (
     <>
-      
+      {/* Large Screen */}
       <div className="flex justify-center items-center bg-gray-100 ">
-        <img src={Image} alt="girl" className='my-0 w-80 h-60 opacity-80 transition-opacity duration-1000 ease-in-out hover:opacity-100" hidden lg:block' />
+        <img src={Image} alt="girl" className='my-0 w-80 h-60 opacity-80 transition-opacity duration-1000 ease-in-out hover:opacity-100" hidden lg:flex ' />
       </div>
       <div className=" flex justify-center items-center bg-gray-100 ">
-        <img src={Image1} alt="girl" className='w-1/2 h-auto hidden lg:block'/>
+        <img src={Image1} alt="girl" className='w-1/2 h-auto hidden lg:flex '/>
       </div>
      
 
-      <div className=''>
-      <div className=" flex justify-center items-center bg-gray-100 ">
-        <img src={Image} alt="girl" className='my-0 w-60 h-60 hidden md:block' />
-      </div>
-      <div className=" flex justify-center items-center bg-gray-100 ">
-        <img src={Image1} alt="girl" className='w-90 h-50 hidden md:block'/>
-      </div>
-      </div>
+     
 
-      <div className='md:hidden'>
+      <div className='lg:hidden'>
       <div className=" flex justify-center items-center bg-gray-100 ">
         <img src={Image} alt="girl" className='my-0 w-60 h-60 ' />
       </div>

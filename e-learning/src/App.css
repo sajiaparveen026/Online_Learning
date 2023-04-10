@@ -1,0 +1,15 @@
+/* App.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    height: 60vh;
+    margin: 50px; /* Set the height to 100% of the viewport height for full-screen */
+  }
+  
+  .grid-item {
+    /* Define styles for the grid items, e.g., background color, padding, etc. */
+    padding: 1rem;
+    background-color: #f0f0f0;
+    
+  }
+  

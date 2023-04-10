@@ -55,6 +55,7 @@ const Navsm = () =>{
     </>
 }
 
+
 const NavLg = () =>{
   return <>
      <div className="container flex mx-auto px-4 items-center justify-between">
@@ -89,10 +90,11 @@ const NavLg = () =>{
 const NavBar = () => {
   return (
     <nav className='bg-darkBackground-700 border-b-2 lg:border-b-0  p-4'>
-    <div className='md:hidden'>
+    <div className='lg:hidden'>
       <Navsm />
     </div>
-     <div className='hidden w-full lg:flex md:flex'>
+   
+     <div className='hidden w-full lg:flex '>
       <NavLg />
     </div>
    </nav>

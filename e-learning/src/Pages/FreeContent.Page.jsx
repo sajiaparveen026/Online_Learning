@@ -1,10 +1,16 @@
 import React from 'react'
-import CoursesLayoutHoc from '../layouts/Courses.Layout'
+import FreeContentHoc from '../layouts/FreeContent.Layout'
+import FreeCourseSectionOne from '../Components/Content/FreeCourseSecOne.Component'
 
 function FreeContentPage() {
   return (
-    <div>Content Here</div>
+    <div>
+      <div className='ml-20  mt-3'>
+   <h1 className='text-3xl font-bold font-mono'>Content</h1>
+      </div>
+      <FreeCourseSectionOne />
+    </div>
   )
 }
 
-export default CoursesLayoutHoc(FreeContentPage)
+export default FreeContentHoc(FreeContentPage)
