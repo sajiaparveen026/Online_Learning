@@ -1,9 +1,12 @@
 import React from 'react'
 import CoursesLayoutHoc from '../layouts/Courses.Layout'
+import Courses from '../Components/Content/Courses.Component'
 
 const CoursesPage = () => {
   return (
-    <div>Paid Courses</div>
+    <div>
+      <Courses />
+    </div>
   )
 }
 

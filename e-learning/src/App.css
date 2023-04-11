@@ -9,7 +9,7 @@
   .grid-item {
     /* Define styles for the grid items, e.g., background color, padding, etc. */
     padding: 1rem;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     
   }
   @media screen and (max-width: 1000px) {
