@@ -4,6 +4,7 @@ import CourseNav from '../Components/NavBar/CourseNav.Component'
 
 
 
+
 const FreeContentHoc = 
 (Component) =>
 ({...props}) => {
@@ -11,6 +12,7 @@ const FreeContentHoc =
     <div>
        <CourseNav />
         <Component {...props}/>
+        
         <Footer />
         </div>
   )

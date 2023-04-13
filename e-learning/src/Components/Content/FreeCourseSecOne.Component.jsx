@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Card from '../Card/Card.Component';
+
 
 const FreeCourseSectionOne= () => {
   const title = "hey"
@@ -18,7 +19,7 @@ const FreeCourseSectionOne= () => {
     }
   ]
   return (
-    <div className="grid-container"> {/* Add a class name for the grid container */}
+    <div className="grid-container "> {/* Add a class name for the grid container */}
       {/* Add grid items for each column */}
       <div className="grid-item">
         {/* Card One */}
@@ -49,7 +50,7 @@ const FreeCourseSectionOne= () => {
       <div class="card">
           <img src="https://i.pinimg.com/originals/8b/48/b5/8b48b53f4d7dd5577fc2439be2d14781.png" alt="" />
   <div class="card-body">
-    <h5 class="card-title"  className='text-2xl mb-2'>Java Basics</h5>
+    <h5 class="card-title"  className='text-2xl mb-2'>Core Java</h5>
     <p class="card-text" className='text-sm text-gray-500 font-serif mb-4'>Java Programming: Write Once, Run Anywhere. Master OOP, Generics, Collections, and More for Cross-Platform Software Development.</p>
     <Card title={title} />
   </div>
@@ -66,8 +67,7 @@ const FreeCourseSectionOne= () => {
   </div>
       </div>
       </div>
-      
-
+     
     </div>
   )
 }

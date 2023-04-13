@@ -1,6 +1,8 @@
 import React from 'react'
 import FreeContentHoc from '../layouts/FreeContent.Layout'
 import FreeCourseSectionOne from '../Components/Content/FreeCourseSecOne.Component'
+import CheatSheet from '../Components/Content/CheatSheet.Component'
+import FeedbackForm from '../Components/Form/FeedbackForm.Component'
 
 function FreeContentPage() {
   return (
@@ -10,6 +12,8 @@ function FreeContentPage() {
    <p className='text-xl text-gray-500'>The description goes here...</p>
       </div>
       <FreeCourseSectionOne />
+      <CheatSheet />
+      <FeedbackForm />
     </div>
   )
 }

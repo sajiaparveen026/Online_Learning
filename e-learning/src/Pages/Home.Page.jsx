@@ -13,10 +13,6 @@ const HomePage = () => {
       <div className=" flex justify-center items-center bg-gray-100 ">
         <img src={Image1} alt="girl" className='w-1/2 h-auto hidden lg:flex '/>
       </div>
-     
-
-     
-
       <div className='lg:hidden'>
       <div className=" flex justify-center items-center bg-gray-100 ">
         <img src={Image} alt="girl" className='my-0 w-60 h-60 ' />

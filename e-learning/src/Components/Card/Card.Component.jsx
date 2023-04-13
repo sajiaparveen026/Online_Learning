@@ -10,7 +10,7 @@ const Card = (props) => {
   const {title,subtitle,topic1,content1,topic2,content2,topic3,content3,topic4,content4} = props;
   return (
     <div>
-        <button className='text-white bg-green-400 mt-2 p-2 rounded-md' onClick={toggleModal}>View Here !</button>
+        <button className='text-white bg-yellow-700 mt-2 p-2 rounded-md' onClick={toggleModal}>View Here !</button>
         {showModal && (
         <div className="fixed z-10 inset-0 overflow-y-auto flex items-center justify-center">
           <div className="fixed inset-0 transition-opacity">
@@ -32,16 +32,16 @@ const Card = (props) => {
                     className="text-lg leading-6 font-medium text-gray-900"
                     id="modal-headline"
                   >
-                    {props.title}
+                    {title}
                   </h3>
                   <div className="mt-2 max-h-60 overflow-y-auto">
                     {/* Add content for the modal body */}
                     <p className="text-sm text-gray-500">
-                      {props.subtitle}
+                      {subtitle}
                     </p>
                     <div className="mt-2 w-70">
                       <details className="text-sm text-gray-500">
-                        <summary className='font-semibold text-xl'>{props.topic1}</summary>
+                        <summary className='font-semibold text-xl'>{topic1}</summary>
                         <p>
                           Disclosure Content goes here...
                           <a
@@ -57,7 +57,7 @@ const Card = (props) => {
                       <br />
                       <hr/>
                       <details className="text-sm text-gray-500">
-                        <summary className='font-semibold text-xl'>{props.topic2}</summary>
+                        <summary className='font-semibold text-xl'>{topic2}</summary>
                         <p>
                           Disclosure Content goes here...
                         </p>
@@ -65,7 +65,7 @@ const Card = (props) => {
                       <br/>
                       <hr/>
                       <details className="text-sm text-gray-500">
-                        <summary className='font-semibold text-xl'>{props.topic3}</summary>
+                        <summary className='font-semibold text-xl'>{topic3}</summary>
                         <p>
                           Disclosure Content goes here...
                         </p>
@@ -73,7 +73,7 @@ const Card = (props) => {
                       <br />
                       <hr/>
                       <details className="text-sm text-gray-500">
-                        <summary className='font-semibold text-xl'>{props.topic4}</summary>
+                        <summary className='font-semibold text-xl'>{topic4}</summary>
                         <p>
                           Disclosure Content goes here...
                         </p>
