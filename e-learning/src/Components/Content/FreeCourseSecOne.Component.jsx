@@ -19,7 +19,10 @@ const FreeCourseSectionOne= () => {
     }
   ]
   return (
-    <div className="grid-container "> {/* Add a class name for the grid container */}
+   <div>
+    <h1 className='flex items-center justify-center text-3xl font-bold text-blue-950 font-serif pt-4 '>Enjoy Free Topics</h1>
+    <p className='flex items-center justify-center text-gray-500 font-light text-xl ml-3'>Read our free content which may help you in your learning. </p>
+     <div className="grid-container "> {/* Add a class name for the grid container */}
       {/* Add grid items for each column */}
       <div className="grid-item">
         {/* Card One */}
@@ -67,8 +70,8 @@ const FreeCourseSectionOne= () => {
   </div>
       </div>
       </div>
-     
     </div>
+   </div>
   )
 }
 

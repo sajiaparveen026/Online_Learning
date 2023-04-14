@@ -3,17 +3,20 @@ import Payment from '../Payment/Payment.Component'
 
 const Courses = () => {   
   return (
-    <div className="grid-container bg-gray-50"> {/* Add a class name for the grid container */}
+   <div className='bg-blue-100'>
+    <h1 className='flex items-center justify-center text-3xl font-bold text-blue-950 font-serif pt-4 '>Grab The Courses!</h1>
+    <p className='flex items-center justify-center text-gray-500 font-light text-xl ml-3'>Get the Live Online Courses By paying short amount and increase your Programming Knowledge</p>
+     <div className="grid-container"> {/* Add a class name for the grid container */}
       {/* Add grid items for each column */}
       <div className="grid-item">
         {/* Card One */}
-      <div class="card">
+      <div class="card" >
           <img src="https://i.ytimg.com/vi/GiBQSkr_Nu0/maxresdefault.jpg" alt="" />
           
   <div class="card-body">
     <h5 class="card-title" className='text-2xl mb-2'>C Programming</h5>
     <p class="card-text" className='text-sm text-gray-500 font-serif mb-3'>...</p>
-   <Payment amount="$45"/>
+   <Payment price="1000"/>
   </div>
 </div>
       </div>
@@ -24,7 +27,7 @@ const Courses = () => {
       <div class="card-body">
     <h5 class="card-title" className='text-2xl mb-2'>C++ Programming</h5>
     <p class="card-text" className='text-sm text-gray-500 font-serif'>...</p>
-    <Payment amount="$50" />
+    <Payment price="1000" />
      </div>
      </div>
       </div>
@@ -35,7 +38,7 @@ const Courses = () => {
   <div class="card-body">
     <h5 class="card-title"  className='text-2xl mb-2'>Core Java</h5>
     <p class="card-text" className='text-sm text-gray-500 font-serif mb-4'>...</p>
-    <Payment amount="$40"/>
+    <Payment price="1000"/>
   </div>
       </div>
       </div>
@@ -46,13 +49,14 @@ const Courses = () => {
   <div class="card-body">
     <h5 class="card-title"  className='text-2xl mb-2'>Html And Css</h5>
     <p class="card-text" className='text-sm text-gray-500 font-serif mb-3'>...</p>
-    <Payment amount="$30"/>
+    <Payment price="800"/>
   </div>
       </div>
       </div>
       
 
     </div>
+   </div>
   )
 }
 

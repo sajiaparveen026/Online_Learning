@@ -3,7 +3,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 
 const Payment = (props) => {
-  const {amount}  = props;
+  const {price}  = props;
     let [isOpen, setIsOpen] = useState(false)
 
   function closeModal() {
@@ -13,9 +13,28 @@ const Payment = (props) => {
   function openModal() { 
     setIsOpen(true)
   }
+
+  const LaunchRazorPay = () =>{
+    let options = {
+      key: "rzp_test_280GwNmBT3tMQE",
+      amount: price * 100,
+      currency: "INR",
+      name:"Book My Show Clone",
+      description:"Movie purchase or rent",
+      handler: () =>{
+        setIsOpen(false);
+        alert("Payment Successful");
+
+      },
+      theme:{color: "#c4242d"},
+    };
+
+    let razorPay = window.Razorpay(options);
+    razorPay.open();
+  }
   return (
     <div>
-         <button className='text-white bg-green-800 mt-2 p-2 rounded-lg w-full' onClick={openModal}>{amount}</button>
+         <button className='text-white bg-green-800 mt-2 p-2 rounded-lg w-full' onClick={openModal}>{price} Rs</button>
     <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child
@@ -58,10 +77,17 @@ const Payment = (props) => {
                   <div className="mt-4">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-green-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      onClick={LaunchRazorPay}
+                    >
+                      Pay ${price}  
+                    </button>
+                    <button
+                      type="button"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-red-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 ml-4"
                       onClick={closeModal}
                     >
-                      Got it, thanks!
+                      Cancel Payment
                     </button>
                   </div>
                 </Dialog.Panel>
