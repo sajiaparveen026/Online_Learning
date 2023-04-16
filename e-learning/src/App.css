@@ -13,6 +13,23 @@
     /* background-color: #f0f0f0; */
     
   }
+
+  .offer_card{
+    transition: all 1s ease;
+  }
+  .offer_card:hover{
+    transform: scale(1.1);
+  }
+
+  .sliding-up-animation {
+    bottom: 0;
+    transition: bottom 0.5s ease;
+  }
+  
+  .sliding-up-animation:hover {
+    bottom: 100%;
+  }
+  
   @media screen and (max-width: 1000px) {
     /* Change the grid template columns for smaller screens */
       .grid-container{

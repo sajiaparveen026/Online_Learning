@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BiMenu } from 'react-icons/bi'
+import { BiChevronDown, BiMenu} from 'react-icons/bi'
 import { Link } from 'react-router-dom';
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment} from 'react'
@@ -21,9 +21,9 @@ const Navsm = () =>{
   };
     return <>
       <div className='text-gray-700 flex items-center justify-between'>
-        <div className='text-semibold text-2xl'>
-            <h1 className='text-white'>E-Learning</h1>
-        </div>
+      <div className='w-10 h-10'>
+     <img src="https://skillwave.training/wp-content/uploads/2020/04/Skillwave-Icon-512x512-1.png" alt="logo" className='w-full h-full'/>
+     </div>
        <div className="relative">
       <button
         className="text-white font-bold text-2xl py-4 pl-4 pr-6"
@@ -127,28 +127,37 @@ const NavLg = () =>{
   function openModal() {
     setIsOpen(true)
   }
-  return <>
-     <div className="container flex mx-auto px-4 items-center justify-between">
-  <div className="flex items-center w-1/2">
-    <div className="w-50 h-50">
-      <h1 className="text-white font-bold text-3xl">E-Learning</h1>
-    </div>
-    <div className="w-10 h-10 flex items-center">
-      <Link to="/" className="text-white  text-xl ">
-        Home
-      </Link>
-      <Link to="/freeContent" className="text-white text-xl ml-20 ">
-        Topic_Wise
-      </Link>
-      <Link to="/Courses" className="text-white text-xl ml-20">
-        Courses
-      </Link>
-    </div>
-  </div>
-    <div className='flex ml-auto'>
-        <button className=" bg-white w-40  h-10 text-2xl rounded-sm" onClick={openModal}>
-          <span className="text-gray-800 flex items-center  ml-2 font-serif">
-          Know More.. 
+  return ( <>
+    <div className='container flex mx-auto px-4 items-center justify-between'>
+      <div className='flex items-center w-1/2 gap-3 '>
+       <div className='w-10 h-10'>
+        <h1 className='text-3xl font-semibold font-serif text-white'>SkillWave</h1>
+       </div>
+  
+      </div>
+      <div className="flex items-center gap-3">
+            <span className="text-gray-200 text-base flex items-center cursor-pointer hover:text-white">
+              Faridabad <BiChevronDown />
+            </span>
+            <Link
+              to="/courses"
+              className="text-gray-200 text-base flex items-center cursor-pointer hover:text-white"
+            >
+              Courses
+            </Link>
+            <Link
+              to="/freeContent"
+              className="text-gray-200 text-base flex items-center cursor-pointer hover:text-white"
+            >
+              Topics
+            </Link>
+            <button className="bg-red-600 text-white px-2 py-1 text-sm rounded">
+              Sign In
+            </button>
+            <div className="w-8 h-8 text-white">
+            <button className=" bg-white w-30  h-10 text-2xl rounded-sm" onClick={openModal}>
+          <span className="text-gray-800 flex items-center font-serif p-2">
+           More 
           </span>
     </button>
     <Transition appear show={isOpen} as={Fragment}>
@@ -204,9 +213,12 @@ const NavLg = () =>{
           </div>
         </Dialog>
       </Transition>
-    </div>
-</div>
-  </>
+            </div>
+          </div>
+      </div>
+      </>
+      );
+    
 }
 
 //Main

@@ -34,7 +34,7 @@ const Payment = (props) => {
   }
   return (
     <div>
-         <button className='text-white bg-green-800 mt-2 p-2 rounded-lg w-full' onClick={openModal}>{price} Rs</button>
+         <button className='bg-green-100 text-green-800 mt-2 p-2 rounded-lg w-full hover:bg-green-800 hover:text-white' onClick={openModal}>{price} Rs</button>
     <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child

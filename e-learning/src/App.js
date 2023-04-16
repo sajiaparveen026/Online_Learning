@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import HomePage from './Pages/Home.Page';
 import FreeContentPage from './Pages/FreeContent.Page';
 import CoursesPage from './Pages/Courses.Page';
+import Topics from './Pages/Topics.Page';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/" element={<HomePage/>}/>
       <Route path="/freeContent" element={<FreeContentPage/>} />
       <Route path='/Courses' element={<CoursesPage/>}/>
+      <Route path='/freeContent/:id' element={<Topics />}/>
     </Routes>
   );
 }

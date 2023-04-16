@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../Components/NavBar/NavBar.Component'
 import Footer from '../Components/Footer/Footer.Component'
+import Choose from '../Components/Choose/Choose.Component'
 
 
 const DefaultLayoutHoc =
@@ -10,6 +11,7 @@ const DefaultLayoutHoc =
     <div>
         <NavBar />
         <Component {...props} />
+        <Choose/>
         <Footer/>
         </div>
   )
