@@ -26,7 +26,7 @@ const FeedbackForm = () => {
     <h1 className="font-mono text-2xl ml-9 text-slate-950 font-semibold flex justify-center items-center">Your Feedback!</h1>
     <p className="text-md ml-9 text-gray-600 flex justify-center items-center">Your Feedback will be Appreciated.</p>
 
-    <div className="feedback-form-container mt-5 ">
+    <div className="feedback-form-container mt-5">
       {submitted ? (
         <h1 className="feedback-form-title">Thank you for your feedback!</h1>
       ) : (
