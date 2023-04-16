@@ -6,18 +6,64 @@ const FreeCourseSectionOne= () => {
  
   const CardData = [
     {
-      id:"234",
       title:"C programming",
-      subtitle:"Let's Talk about C programming Concepts..."
+      subtitle:"You can Use these links to learn about C programming",
+      Topic1:"Basic Concepts of C",
+      url1:"https://www.geeksforgeeks.org/c-programming-language/",
+      Topic2:"Variables",
+      url2:"https://www.geeksforgeeks.org/variables-in-c/",
+      Topic3:"Operators",
+      url3:"https://www.geeksforgeeks.org/operators-in-c/",
+      Topic4:"Conditional Statements",
+      url4:"https://www.geeksforgeeks.org/decision-making-c-cpp/",
+      Topic5:"Looping Statement",
+      url5:"https://www.geeksforgeeks.org/c-loops/",
+      More:"More Content will be Uploaded Soon..."
     },
     {
-      id:"798"
+      title:"C++ programming",
+      subtitle:"You can Use these links to learn about C++ programming",
+      Topic1:"Basic Concepts of C++",
+      url1:"https://www.geeksforgeeks.org/cpp-basics/",
+      Topic2:"Classes and Objects",
+      url2:"https://www.geeksforgeeks.org/c-classes-and-objects/",
+      Topic3:"Constructors",
+      url3:"https://www.geeksforgeeks.org/constructors-c/",
+      Topic4:"Inheritance",
+      url4:"https://www.geeksforgeeks.org/inheritance-in-c/",
+      Topic5:"PolyMorphism",
+      url5:"https://www.geeksforgeeks.org/cpp-polymorphism/",
+      More:"More Content will be Uploaded Soon..."
     },
     {
-      id:"487"
+      title:"Core Java",
+      subtitle:"You can Use these links to learn about Core Java",
+      Topic1:"Java Programming Basics",
+      url1:"https://www.geeksforgeeks.org/java-programming-basics/",
+      Topic2:"Classes and Objects",
+      url2:"https://www.geeksforgeeks.org/classes-objects-java/",
+      Topic3:"Inheritance in Java",
+      url3:"https://www.geeksforgeeks.org/inheritance-in-java/",
+      Topic4:"Polymorphism In Java",
+      url4:"https://www.geeksforgeeks.org/polymorphism-in-java/",
+      Topic5:"Interfaces",
+      url5:"https://www.geeksforgeeks.org/interfaces-in-java/",
+      More:"More Content will be Uploaded Soon..."
     },
     {
-      id:"873"
+      title:"Html and Css",
+      subtitle:"You can Use these links to learn about Html and Css",
+      Topic1:"Html Basics",
+      url1:"https://www.geeksforgeeks.org/html-basics/",
+      Topic2:"Css Guide",
+      url2:"https://www.geeksforgeeks.org/css-cheat-sheet-a-basic-guide-to-css/",
+      Topic3:"Html Essential Tags",
+      url3:"https://www.geeksforgeeks.org/essential-html-tags/",
+      Topic4:"Commonly Used Tags",
+      url4:"https://www.geeksforgeeks.org/most-commonly-used-tags-in-html/",
+      Topic5:"Css Properties",
+      url5:"https://www.geeksforgeeks.org/css-properties-complete-reference/",
+      More:"More Content will be Uploaded Soon..."
     },
   ]
   return (
@@ -33,7 +79,7 @@ const FreeCourseSectionOne= () => {
   <div class="card-body">
     <h5 class="card-title" className='text-2xl mb-2'>C Programming</h5>
     <p class="card-text" className='text-sm text-gray-500 font-serif mb-3'>C Programming: Efficient, Powerful, and Versatile. Learn Syntax, Control Structures, Data Structures, and More for Building Software Applications.</p>
-    <Card id={CardData[0].id} title={CardData[0].title} subtitle={CardData[0].subtitle} />
+    <Card data={CardData[0]}/>
   </div>
 </div>
       </div>
@@ -44,7 +90,7 @@ const FreeCourseSectionOne= () => {
       <div class="card-body">
     <h5 class="card-title" className='text-2xl mb-2'>C++ Programming</h5>
     <p class="card-text" className='text-sm text-gray-500 font-serif'>C++ Programming: Unleash Your Creativity. Master Object-Oriented Programming, Templates, and More for Crafting Cutting-Edge Software Solutions.</p>
-    <Card id={CardData[1].id} />
+    <Card data={CardData[1]} />
      </div>
      </div>
       </div>
@@ -55,7 +101,7 @@ const FreeCourseSectionOne= () => {
   <div class="card-body">
     <h5 class="card-title"  className='text-2xl mb-2'>Core Java</h5>
     <p class="card-text" className='text-sm text-gray-500 font-serif mb-4'>Java Programming: Write Once, Run Anywhere. Master OOP, Generics, Collections, and More for Cross-Platform Software Development.</p>
-    <Card id={CardData[2].id} />
+    <Card data={CardData[2]}/>
   </div>
       </div>
       </div>
@@ -66,7 +112,7 @@ const FreeCourseSectionOne= () => {
   <div class="card-body">
     <h5 class="card-title"  className='text-2xl mb-2'>Html And Css</h5>
     <p class="card-text" className='text-sm text-gray-500 font-serif mb-3'>HTML & CSS Programming: Building the Web. Learn Markup, Styling, Layouts, and Responsive Design for Creating Modern and Interactive Websites.</p>
-    <Card id={CardData[3].id} />
+    <Card  data={CardData[3]}/>
   </div>
       </div>
       </div>
