@@ -35,14 +35,22 @@ const Navsm = () =>{
         <div className="absolute right-0 mt-2 bg-white rounded-md shadow-lg">
           {/* Dropdown content */}
            <ul className="py-2 w-80 bg-gray-300 rounded-md ">
-            <li className="px-4 py-2 text-gray-800 hover:bg-gray-200 items-center cursor-pointer">
-             <Link to="/"className='text-xl' >Home</Link>
+            <li className="px-4 py-1 text-gray-800 hover:bg-gray-200 items-center cursor-pointer">
+             <Link to="/"className='text-md' >Home</Link>
              <hr />
             </li>
-            <li className="px-4 py-2 text-gray-800 hover:bg-gray-200 cursor-pointer">
+            <li className="px-4 py-1 text-gray-800 hover:bg-gray-200 items-center cursor-pointer">
+             <Link to="/courses"className='text-md' >Courses</Link>
+             <hr />
+            </li>
+            <li className="px-4 py-1 text-gray-800 hover:bg-gray-200 items-center cursor-pointer">
+             <Link to="/freeContent"className='text-md' >Topics</Link>
+             <hr />
+            </li>
+            <li className="px-4 py-1 text-gray-800 hover:bg-gray-200 cursor-pointer">
                <button className="text-white bg-red-400 w-30  h-8 text-2xl rounded-md" onClick={openModal}>
-               <span className="text-gray-800 flex items-center  ml-2 font-serif">
-          Know More.. 
+               <span className="text-gray-800 flex items-center  ml-2 font-light">
+           More 
           </span>
     </button>
     <Transition appear show={isOpen} as={Fragment}>
@@ -75,12 +83,12 @@ const Navsm = () =>{
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Let me tell you more 
+                    Something More...
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      ...
-                    </p>
+                    <p className='text-md text-gray-500 font-mono'>Hey I am Sajia Parveen!</p>
+                    <p className='font-thin text-gray-600 mt-3 mb-3'>This is my React Js Website. I used React technologies in Building this E-Learning Website. Further I used tailwind Css for Styles and Headless Ui for the Modals what I used here.</p>
+                    <span className='text-gray-500 font-light'>* This Website is regarding my Project!</span>
                   </div>
 
                   <div className="mt-4">
@@ -89,7 +97,7 @@ const Navsm = () =>{
                       className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
                     >
-                      THANKS!
+                      Explore!
                     </button>
                   </div>
                 </Dialog.Panel>
@@ -183,12 +191,12 @@ const NavLg = () =>{
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Let me tell you more 
+                    Something More...
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      ...
-                    </p>
+                    <p className='text-md text-gray-500 font-mono'>Hey I am Sajia Parveen!</p>
+                    <p className='font-thin text-gray-600 mt-3 mb-3'>This is my React Js Website. I used React technologies in Building this E-Learning Website. Further I used tailwind Css for Styles and Headless Ui for the Modals what I used here.</p>
+                    <span className='text-gray-500 font-light'>* This Website is regarding my Project!</span>
                   </div>
 
                   <div className="mt-4">
@@ -197,7 +205,7 @@ const NavLg = () =>{
                       className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
                     >
-                      THANKS!
+                      Explore!
                     </button>
                   </div>
                 </Dialog.Panel>

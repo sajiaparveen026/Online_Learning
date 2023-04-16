@@ -69,16 +69,8 @@ const HomePage = () => {
           <img src={Image} alt="girl" className='my-0 w-60 h-60 ' />
         </div>
       </div>
-      <div className=' h-150 bg-blue-50 sm:hidden lg:flex items-center justify-center'>
-      <h1 className=' pt-16 pb-40 font-bold font-mono text-5xl text-gray-700'>
-      “Never know until you try”
-      <br />
-      <br />
-      “Wake up and be inspired”
-      </h1>
-      </div>
-      <div className='md:hidden h-100 bg-blue-50'>
-      <h1 className='flex items-center justify-center pt-16 pb-40 font-bold font-mono text-3xl text-gray-700'>
+      <div className=' h-150 bg-blue-50 lg:flex items-center justify-center sm:hidden'>
+      <h1 className='pb-20 pt-10 font-bold font-mono text-4xl text-gray-700'>
       “Never know until you try”
       <br />
       <br />

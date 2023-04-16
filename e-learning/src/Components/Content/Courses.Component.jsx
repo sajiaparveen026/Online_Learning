@@ -4,7 +4,7 @@ import Payment from '../Payment/Payment.Component'
 const Courses = () => {   
   return (
    <div className='bg-blue-100'>
-    <h1 className='flex items-center justify-center text-3xl font-bold text-blue-950 font-serif pt-4 '>Grab The Courses!</h1>
+    <h1 className='flex items-center justify-center text-3xl font-bold text-blue-950 font-serif pt-4 '>Grab The Course!</h1>
     <p className='flex items-center justify-center text-gray-500 font-light text-xl ml-3'>Get the Live Online Courses By paying short amount and increase your Programming Knowledge</p>
      <div className="grid-container"> {/* Add a class name for the grid container */}
       {/* Add grid items for each column */}

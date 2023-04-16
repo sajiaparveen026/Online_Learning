@@ -12,7 +12,7 @@ const Choose = () => {
       <div className='flex items-start pl-14 pt-8'>
         <ImHappy2 className='text-2xl mt-1 mr-4' />
         <span className='text-xl font-mono text-gray-600'>
-           Get to work on live hands-on projects.
+            Work on live hands-on projects.
         </span>
       </div>
       <div className='flex items-start pl-14 pt-4'>
